@@ -7,6 +7,9 @@
 ## Tech Stack
 
 
+##  Content
+[01. project](https://github.com/jinokiim/mcMini/tree/main/01.%20project) : 완성된 파일 올리는 곳
+[02. working](https://github.com/jinokiim/mcMini/tree/main/02.%20working) : 현재 작업중이거나 샘플 파일들
 
 ##  프로젝트 소개
 
