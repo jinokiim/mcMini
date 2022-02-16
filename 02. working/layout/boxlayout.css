@@ -1,1 +1,10 @@
 
+body {
+    /* 가로 스크롤이 안 생기게 */
+	overflow-x: hidden;
+	color: rgb(29, 29, 31);
+    /* 자간 줄이기 */
+	letter-spacing: -0.05em;
+	background: white;
+}
+
