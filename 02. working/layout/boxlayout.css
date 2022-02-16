@@ -63,3 +63,12 @@ body {
 	margin: auto;
 	justify-content: center;
 }
+
+/* 2개짜리에서 넖이를 2:1로 줄때 추가 */
+.w-2 {
+	width: 75%;
+}
+
+.w-1 {
+	width: 40%;
+}
