@@ -1,4 +1,27 @@
+
+/*   pallet
+--background: #f5f5f7
+--text: 1d1d1f
+--violet: #8876fe;
+--magenta: #d71bce;
+--plum: #8d1287;
+--indigo: #622aff;
+--grape: #6529f8;
+--azure: #027fff;
+--tomato: #f63e54;
+--orange: #e66702;
+--green: #0c9d46;
+--forest: #0c8346;
+--sea-green: #099b9d;
+--teal: #049cb7;
+--aqua: #039e8f;
+--moonstone: #2294b1;
+--midnight: #1b23b3;
+--sapphire: #3d44c3; 
+*/
+
 /* @@@@@@@@@@ 전체 설정 @@@@@@@@@@ */
+
 
 html {
 	font-family: 'Noto Sans KR', sans-serif;
@@ -19,53 +42,64 @@ p {
 }
 a{
     color: rgb(29, 29, 31);
-    /* 링크 밑줄 없애기 */
-    text-decoration: none;
+    /* 링크가 거렸는지 확인후 활성화하기 */
+    /* text-decoration: none; */
+}
+div{
+    display: block;
 }
 
 /* @@@@@@@@@@ 페이지 시작 @@@@@@@@@@ */
 /* @@@@@@@@@@ 네비게이션 바 @@@@@@@@@@ */
 .global-nav {
-    position: absolute;
-	width: 100%;
-	height: 50px;
-    padding: 5%;
+    height: 50px;
 }
-.global-nav-links,
-.local-nav-links {
+.local-nav {
+    height: 60px;
+    border-bottom: 2px solid lightgray;
+    z-index: 9999;
+}
+
+.local-nav-sticky .local-nav {
+    position: sticky;
+    top: 0;
+    background: rgba(62, 68, 200, 0.4);
+    
+    backdrop-filter: saturate(180%) blur(15px);
+    transition: all;
+    transition-duration: 2s;
+
+    
+}
+
+.global-nav-links, .local-nav-links {
+    display: flex;
+    align-items: center;
     max-width: 1000px;
     height: 100%;
-    display: flex;
-    margin: auto;
-    /* 글자가 가운데높이로 */
-    align-items: center;
+    margin: 0 auto;
 }
-.global-nav-links{
-    /* 좌우로 벌려주기 */
-    justify-content: space-between;
-}
-.local-nav-links .logo {
+.global-nav-links .logo {
     /* 첫번째만 왼쪽으로 붙도록 */
     margin-right: auto;
-    margin-left: 0;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
+.local-nav-links {
+    justify-content: space-between;
+}
 
-.local-nav {
-    position: absolute;
-    top: 45px;
-    width: 100%;
-    height: 55px;
-    padding: 5%;
-    border-bottom: 1px solid lightgray;
+.local-nav-links a {
+    font-size: 0.9rem;
 }
-.local-nav-links a{
-    margin-left: 2em;
+.global-nav-links a:not(.logo){
+    margin-left: 3em;
 }
+
+
 
 /* @@@@@@@@@@ 스크롤 @@@@@@@@@@ */
-/* 스크롤 관련 0000000000*/
+
 .scroll-section {
     /* 섹션마다 화면나오게 설정 */
     padding-top: 50vh;
@@ -84,8 +118,7 @@ a{
 	margin: 5px 0;
 	height: 3em;
 	font-size: 2.5rem;
-	opacity: 0;
-    /* background-color: lightgray; */
+    background-color: lightgray;
 }
 
 .main-message p {
@@ -122,15 +155,10 @@ a{
     font-size: 1.2rem;
     
 }
+/* 설명할때 붙이기 */
 .dese-message {
     width: 50%;
     font-weight: bold;
-}
-
-.pin {
-    width: 1px;
-    height: 100px;
-    background: black;
 }
 
 /* 스크롤 관련 33333333333333 */
@@ -154,21 +182,25 @@ a{
     text-align: center;
 }
 
-/* 고정문구 관련 */
-.sticky-elem {
-    /* 해당 구역일때 보이도록  */
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+
+
+/* 카드 애니매이션 관련 */
+
+.card-background {
+    height: 3000px;
+    margin-top: 800px;
+    margin-bottom: 1600px;
+}
+.card-box img {
+    display: block;
+    margin: auto;
+    max-width: 80%;
 }
 
-#show-scene-0 #scroll-section-0 .sticky-elem,
-#show-scene-1 #scroll-section-1 .sticky-elem,
-#show-scene-2 #scroll-section-2 .sticky-elem,
-#show-scene-3 #scroll-section-3 .sticky-elem{
-    display: block;
+.card-box {
+    position: sticky;
+    top: 400px;
+    margin-top: 200px;
 }
 
 
