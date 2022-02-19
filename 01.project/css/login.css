@@ -1,0 +1,21 @@
+p{
+  font-size: 17px;
+}
+h1{
+  font-size: 32px;
+}
+.signin-container {
+  text-align: center;
+}
+
+.signin-logo-box {
+  
+  height: 300px;
+
+}
+
+.signin-logo {
+  width: 200px;
+  height: 200px;
+  margin-top: 100px;
+}

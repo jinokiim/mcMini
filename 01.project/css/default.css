@@ -7,6 +7,12 @@ html {
 }
 body {
 	-webkit-font-smoothing: antialiased;
+	/* 가로 스크롤이 안 생기게 */
+	overflow-x: hidden;
+	color: rgb(29, 29, 31);
+    /* 자간 줄이기 */
+	letter-spacing: -0.05em;
+    background-color: #f5f5f7;;
 }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -47,4 +53,62 @@ button {
 	border: 0;
 	background: transparent;
 	cursor: pointer;
+}
+/* 문단 띄우기 */
+p {
+	line-height: 1.6;
+}
+div{
+	display: block;
+}
+a{
+	color: rgb(29, 29, 31);
+	/* 링크가 거렸는지 확인후 활성화하기 */
+	/* text-decoration: none; */
+}
+
+/* @@@@@@@@@@ 네비게이션 바 @@@@@@@@@@ */
+.global-nav {
+	height: 50px;
+}
+.local-nav {
+	height: 60px;
+	border-bottom: 2px solid lightgray;
+	z-index: 9999;
+}
+
+.local-nav-sticky .local-nav {
+	position: sticky;
+	top: 0;
+	background: rgba(62, 68, 200, 0.4);
+	
+	backdrop-filter: saturate(180%) blur(15px);
+	transition: all;
+	transition-duration: 2s;
+
+	
+}
+
+.global-nav-links, .local-nav-links {
+	display: flex;
+	align-items: center;
+	max-width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+}
+.global-nav-links .logo {
+	/* 첫번째만 왼쪽으로 붙도록 */
+	margin-right: auto;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.local-nav-links {
+	justify-content: space-between;
+}
+
+.local-nav-links a {
+	font-size: 0.9rem;
+}
+.global-nav-links a:not(.logo){
+	margin-left: 3em;
 }
