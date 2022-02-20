@@ -1,0 +1,159 @@
+.orange{
+  background-color: orange;
+}
+
+.skyblue{
+  background-color: skyblue;
+}
+div {
+  display: block;
+}
+.app-container{
+  height: 100%;
+  text-align: center;
+}
+.layout {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0 80px;
+  
+}
+.layout-nav {
+  width: 290px;
+  text-align: left;
+}
+.side-nav {
+  padding: 0 40px 0 0;
+}
+.person-info {
+  margin-bottom: 40px;
+}
+.person-image {
+  margin-bottom: 15px;
+}
+.person-image img {
+  width: 80px;
+  height: 80px;
+}
+.person-info-name {
+  max-width: 100%;
+  font-size: 19px;
+  font-weight: 600
+}
+.person-info-email {
+  max-width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  color: gray;
+}
+
+.layout-section {
+  width: 670px;
+  text-align: left;
+}
+
+.page-header {
+  margin: 0 10px 40px;
+}
+.page-description {
+  margin-top: 15px;
+  line-height: 1.6;
+}
+.large-6 {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+.column {
+  box-sizing: border-box;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+}
+.section-item {
+  padding: 0 10px 20px;
+}
+.width {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+}
+
+.button {
+  padding: 0;
+  border-radius: 8px;
+  font-size: 17px;
+  min-width: 28px;
+  cursor: pointer;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  border-radius: 11px;
+  background-position: 50%;
+  background-size: cover;
+  background-color: rgba(118, 118, 230, 0.397);
+  min-height: 124px;
+  box-sizing: border-box;
+  filter: drop-shadow(0 10px 10px rgba(76, 76, 109. 0.7));
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+
+.card-middle {
+  padding: 17px 19px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+.card-header {
+  position: relative;
+}
+
+.card-title {
+  margin: -10px 0 0;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-size: 19px;
+}
+.card-body {
+  position: relative;
+  padding: 0;
+}
+
+.card-right {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 40px;
+  width: 40px;
+  padding: 17px 19px 17px 1px;
+}
+.card-right-element {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+
+/* 반응형 웹을 위한 태그 */
+/* tablet size */
+@media screen and (max-width: 1068px) {
+  
+  .medium-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .layout-section {
+    width: 335px;
+  }
+
+
+}
+

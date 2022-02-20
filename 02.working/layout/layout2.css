@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'pretty-font';
+  src: url(../font/NanumSquare-master/NanumSquareR.woff);
+}
+
+div, input, textarea {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0px;
+  font-family: 'pretty-font';
+}
+
+
+
+
+
+
+
+
+/* 메뉴들 */
+.product-container {
+  width: 80%;
+  max-width: 900px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.product-container div {
+  float: left;
+  width: 25%;
+}
+
+
+
+
+
+/* float다음 줄을 띄우기 위한 class */
+.clear-both {
+  clear: both;
+  float: none;
+}
+
+/* 반응형 웹을 위한 태그 */
+/* tablet size */
+@media screen and (max-width: 1200px) {
+  
+  .product-container div{
+      width: 50%;
+      max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-title{
+      font-size: 20px;
+  }
+  .nav-item {
+      font-size: 12px;
+  }
+
+  .product-container div{
+      width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .main-title{
+      font-size: 10px;
+  }
+  .nav-item {
+      font-size: 8px;
+  }
+}
