@@ -15,6 +15,7 @@ h1 {
   font-size: 3rem;
   font-weight: bold;
 }
+/* 공통 */
 .app-container{
   height: 100%;
   text-align: center;
@@ -59,7 +60,7 @@ h1 {
   text-align: left;
 }
 
-
+/* 목록 */
 ul, li {
   list-style: none;
 }
@@ -128,7 +129,7 @@ ul, li {
 .board-list .writer {
   width: 10%;
 }
-.board-list .data {
+.board-list .date {
   width: 10%;
 }
 .board-list .count {
@@ -165,6 +166,8 @@ ul, li {
   background: black;
   color: wheat;
 }
+
+/* view */
 .board-view {
   width: 100%;
   border-top: 2px solid black;
@@ -186,6 +189,7 @@ ul, li {
 .board-view .info dl:first-child{
   padding-left: 0;
 }
+
 .board-view .info dl::before{
     content: "";
     display: block;
@@ -194,7 +198,10 @@ ul, li {
     left: 0;
     width: 1px;
     height: 13px;
-    background: red;
+    background: gray;
+}
+.board-view .info dl:first-child:before{
+  display: none;
 }
 .board-view .info dt,
 .board-view .info dd {
@@ -208,4 +215,151 @@ ul, li {
   margin-left: 10px;
 }
 
+.board-view .content {
+  padding: 20px 15px;
+  border-bottom: 1px solid black;
+  line-height: 170%;
+  font-size: 1.4rem;
+}
 
+/* write */
+.board-write {
+  border-top: 2px solid black;
+}
+
+.board-write .title,
+.board-write .info {
+  padding: 15px;
+}
+.board-write .info {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid black;
+  font-size: 0;
+}
+.board-write .title dl {
+  font-size: 0;
+}
+.board-write .title dt,
+.board-write .title dd,
+.board-write .info dt,
+.board-write .info dd{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.4rem;
+}
+.board-write .info dt,
+.board-write .title dt{
+  width: 100px;
+}
+.board-write .title dd {
+  width: calc(100% - 100px);
+}
+.board-write .title input[type="text"],
+.board-write .info input[type="text"],
+.board-write .info input[type="password"] {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.board-write .title input[type="text"] {
+  width: 93%;
+}
+.board-write .info dl{
+  display: inline-block;
+  width: 50%;
+  vertical-align: middle;
+}
+
+
+.board-write .content {
+  border-bottom: 1px solid black;
+}
+
+.board-write .content textarea {
+  display: block;
+  width: 100%;
+  height: 300px;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 0;
+  resize: vertical;
+}
+
+
+
+
+/* media query */
+
+
+@media (max-width: 1000px) {
+
+  /* 목록 */
+  .board-wrap {
+    width: 100%;
+    min-width: 320px;
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+  .layout-nav{
+    display: none;
+  }
+  .board-list .num,
+  .board-list .date,
+  .board-list .count {
+    display: none;
+  }
+  .board-list .writer{
+    width: 40%;
+  }
+  .layout-nav{
+    display: none;
+  }
+  .board-page a{
+    width: 26px;
+    height: 26px;
+  }
+
+  .board-page a.bt,
+  .board-page a.num {
+    padding-top: 5px;
+  }
+
+  .board-view .info dl {
+    width: 49%;
+    padding: 0;
+  }
+  .board-view .info dl:nth-child(-n+2) {
+    margin-bottom: 5px;
+  }
+  .board-view .info dl::before  {
+    display: none;
+  }
+
+  .board-view .info dt,
+  .board-view .info dd {
+  font-size: 1.2rem;
+  }
+
+  /* 글쓰기 */
+  .board-write .title dt,
+  .board-write .info dt {
+    display: none;
+  }
+  .board-write .info dl {
+    width: 49%;
+  }
+  .board-write .info dl:first-child {
+    margin-right: 2%;
+  }
+  .board-write .title dd,
+  .board-write .info dd {
+    width: 100%;
+  }
+  .board-write .title input[type="text"],
+  .board-write .info input[type="text"],
+  .board-write .info input[type="password"] {
+    width: 100%;
+  }
+  
+
+}
