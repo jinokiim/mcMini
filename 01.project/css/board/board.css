@@ -1,0 +1,211 @@
+/* board.html */
+/* view.html */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 10px;
+}
+div {
+  display: block;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.app-container{
+  height: 100%;
+  text-align: center;
+}
+.layout {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0 80px;
+  
+}
+.layout-nav {
+  width: 290px;
+  text-align: left;
+}
+.side-nav {
+  padding: 0 40px 0 0;
+}
+.person-info {
+  margin-bottom: 40px;
+}
+.person-image {
+  margin-bottom: 15px;
+}
+.person-image img {
+  width: 80px;
+  height: 80px;
+}
+.person-info-name {
+  max-width: 100%;
+  font-size: 19px;
+  font-weight: 600
+}
+.person-info-email {
+  max-width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  color: gray;
+}
+
+.layout-section {
+  width: 670px;
+  text-align: left;
+}
+
+
+ul, li {
+  list-style: none;
+}
+
+.board-title {
+  margin-bottom: 25px;
+}
+.board-title p {
+  margin-top: 5px;
+  font-size: 1.4rem;
+}
+
+
+/* 버튼 관련 */
+.btn-wrap {
+  margin-top: 30px;
+  font-size: 0;
+  text-align: center;
+}
+.btn-wrap a {
+  display: inline-block;
+  min-width: 80px;
+  margin-left: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 11px;
+  font-size: 1.4rem;
+}
+.btn-wrap a:first-child {
+  margin-left: 0;
+}
+
+.btn-wrap a.on {
+  background-color: black;
+  color: antiquewhite;
+}
+
+/* 게시판 목록 관련 */
+.board-list {
+  width: 100%;
+  border-top: 2px solid black;
+}
+.board-list > div {
+  border-bottom: 1px solid gray;
+  font-size: 0;
+}
+.board-list > div.top {
+  border-bottom: 1px solid gray;
+}
+.board-list > div:last-child {
+  border-bottom: 1px solid black;
+}
+.board-list > div > div {
+  display: inline-block;
+  padding: 15px 0;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.board-list .num {
+  width: 10%;
+}
+.board-list .title {
+  width: 60%;
+}
+.board-list .writer {
+  width: 10%;
+}
+.board-list .data {
+  width: 10%;
+}
+.board-list .count {
+  width: 10%;
+}
+
+/* 페이지 제어 버튼 관련 */
+.board-page {
+  margin-top: 30px;
+  text-align: center;
+}
+.board-page a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 11px;
+  border: 1px solid gray;
+  vertical-align: middle;
+  line-height: 100%;
+}
+
+.board-page a.bt {
+  padding-top: 8px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+.board-page a.num {
+  padding-top: 8px;
+  font-size: 1.4rem;
+}
+
+.board-page a.num.on {
+  border-color: black;
+  background: black;
+  color: wheat;
+}
+.board-view {
+  width: 100%;
+  border-top: 2px solid black;
+}
+.board-view .title {
+  padding: 20px 15px;
+  border-bottom: 1px solid lightgray;
+  font-size: 2rem;
+}
+.board-view .info {
+  padding: 15px;
+  border-bottom: 1px solid gray;
+}
+.board-view .info dl {
+  display: inline-block;
+  padding: 0 20px;
+  position: relative;
+}
+.board-view .info dl:first-child{
+  padding-left: 0;
+}
+.board-view .info dl::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 1px;
+    height: 13px;
+    background: red;
+}
+.board-view .info dt,
+.board-view .info dd {
+  display: inline-block;
+  font-size: 1.4rem;
+}
+.board-view .info dt {
+  
+}
+.board-view .info dd {
+  margin-left: 10px;
+}
+
+

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 폼</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<style type="text/css">
+        h3 {
+            font-size: 17px;
+        }
+        .input-section{
+            position: relative;
+        }
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .login-container {
+            width: 400px;
+            height: 230px;
+            background-color: rgb(240, 240, 240);
+        }
+        .header {
+            margin: 30px 0 20px;
+            border-bottom: solid 1px gray;
+        }
+        .butten-section {
+            display: flex;
+            justify-content: space-between;
+            margin: 21px 133px;
+        }
+        .login-button span {
+            letter-spacing: 1px;
+        }
+        .input-box {
+            margin: 7px;
+        }
+        .id-input {
+            font-size: px;
+        }
+        .input-text {
+            text-align: left;
+        }
+        .id-text {
+            margin: 0;
+            position: absolute;
+            top: -15px;
+            left: 10px;
+        }
+        .pw-text {
+            margin: 0;
+            position: absolute;
+            top: 15px;
+            left: 10px;
+        }
+        .login-button .cancel-button {
+            margin: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form class="login-container">
+            <div class="header">
+                <h1>로그인</h1>
+            </div>
+            <div class="login-box">
+                <div class="input-section">
+                    <div class="id-input-section input-box">
+                        <div class="id-input">
+                            <input type="text" name="id" id="myid">
+                        </div>
+                    </div>
+                    <div class="pw-input-section input-box">
+                        <div class="pw-input">
+                            <input type="password" name="pw" id="mypw">
+                        </div>
+                    </div>
+                    <div class="input-text">
+                        <div class="id-text">
+                            <h3>아이디</h3>
+                        </div>
+                        <div class="pw-text">
+                            <h3>비밀번호</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="butten-section">
+                    <div class="login-button">
+                        <button type="submit" id="login"><span>로그인</span></button>
+                    </div>
+                    <div class="cancel-button">
+                        <button type="reset"><span>취&nbsp&nbsp&nbsp&nbsp소</span></button>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </form>
+    </div>
+
+    <script>
+        
+        
+
+        $('#login').on('click', function(evt) {
+            if(document.getElementById('myid').value == ''){
+                alert('아이디를 입력해주세요')
+                evt.preventDefault();
+            }
+        });
+        
+
+
+    </script>
+</body>
+</html>

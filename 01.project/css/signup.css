@@ -85,6 +85,9 @@ h3 {
 .input-id-field {
   margin-bottom: 0;
 }
+.form-floating > div > h3 {
+  margin-left: 2px;
+}
 
 .button {
   font-size: 17px;
