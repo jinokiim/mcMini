@@ -11,6 +11,7 @@
   //     document.body.classList.remove('local-nav-sticky')
   //   }
   // }
+  
   var checkMenu = () => {
     if (yOffset > 50) {
           document.body.classList.add('local-nav-sticky')

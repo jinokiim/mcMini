@@ -85,7 +85,6 @@ a{
 	position: sticky;
 	top: 0;
 	background: rgba(62, 68, 200, 0.4);
-	
 	backdrop-filter: saturate(180%) blur(15px);
 	transition: all;
 	transition-duration: 2s;
