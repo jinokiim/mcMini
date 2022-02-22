@@ -1,11 +1,11 @@
 $(document).ready(function () {
   // javascript의 data
   var data = [
-    { no: 1, name: "어뮤즈스파", floor: "B1", storetype: "etc", logo: "../starbucks-logo.png", phone: "010-0000-0000" },
-    { no: 2, name: "공인중개사", floor: "B1", storetype: "rent", logo: "../img/sample/starbucks-logo.png", phone: "010-0000-0000" },
+    { no: 1, name: "어뮤즈스파", floor: "B1", storetype: "etc", logo: "../img/test.png", phone: "010-0000-0000" },
+    { no: 2, name: "공인중개사", floor: "B1", storetype: "rent", logo: "../img/test.png", phone: "010-0000-0000" },
     { no: 3, name: "입주지원센터", floor: "B1", storetype: "etc", logo: "../img/sample/starbucks-logo.png", phone: "010-0000-0000" },
-    { no: 4, name: "하노이 별", floor: "B1", storetype: "restaurant", logo: "../img/sample/starbucks-logo.png", phone: "010-0000-0000" },
-    { no: 5, name: "오몬드", floor: "B1", storetype: "cafe", logo: "../img/sample/starbucks-logo.png", phone: "010-0000-0000" },
+    { no: 4, name: "하노이 별", floor: "B1", storetype: "restaurant", logo: "../img/test.png", phone: "010-0000-0000" },
+    { no: 5, name: "오몬드", floor: "B1", storetype: "cafe", logo: "../img/test.png", phone: "010-0000-0000" },
     { no: 6, name: "S클래스 동물병원", floor: "B1", storetype: "hospital", logo: "../img/sample/starbucks-logo.png", phone: "010-0000-0000" },
     { no: 7, name: "오븐빨", floor: "B1", storetype: "restaurant", logo: "../img/sample/starbucks-logo.png", phone: "010-0000-0000" },
     { no: 8, name: "쥬쥬퍼피", floor: "B1", storetype: "shop", logo: "../img/sample/starbucks-logo.png", phone: "010-0000-0000" },
@@ -20,6 +20,7 @@ $(document).ready(function () {
   ];
 
   var template = '<a><img src="${logo}"></a>';
+    // + <span>${name}</span>';
     
 
 
@@ -38,7 +39,7 @@ $(document).ready(function () {
         });
       }
     });
-    // console.log(makeData);
+    console.log(makeData);
 
     // 만들기 전에 기존에 tbody에 있던 모든 tr을 삭제하고 아래에 만들어지는 요소로 출력
     // 요소로 출력
@@ -51,6 +52,7 @@ $(document).ready(function () {
       // ${XXX} => 실질적인 뷰 데이터로 변경
       // item => { no: 2, name: "프랑스", capital: "파리", region: "europe" }
       var dom = temp.replace('${logo}', item.logo)
+      // .replace('${name}', item.name)
 
       
       //dom 변수의 값은 일반 text
