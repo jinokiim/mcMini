@@ -22,7 +22,13 @@ h3 {
   height: 100%;
   text-align: center;
 }
+.signup-header{
+  margin: 50px auto 20px;
+}
 
+.signup-header .signup-title {
+  margin: 20px auto;
+}
 .input-section {
   max-width: 1200px;
   margin: auto;
