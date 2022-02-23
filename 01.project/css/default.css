@@ -45,11 +45,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-img {
+/* img {
 	max-width: 100%;
 	height: auto;
 	border: 0;
-}
+} */
 button {
 	border: 0;
 	background: transparent;
@@ -66,51 +66,4 @@ a{
 	color: rgb(29, 29, 31);
 	/* 링크가 걸렸는지 확인후 활성화하기 */
 	text-decoration: none;
-}
-
-/* @@@@@@@@@@ 네비게이션 바 @@@@@@@@@@ */
-.nav-content {
-	margin: 0 35.5px;
-	padding: 0 22px;
-}
-.global-nav {
-	height: 50px;
-}
-.local-nav {
-	height: 60px;
-	border-bottom: 2px solid lightgray;
-	z-index: 9999;
-}
-.local-nav-sticky .local-nav {
-	position: sticky;
-	top: 0;
-	background: rgba(62, 68, 200, 0.4);
-	backdrop-filter: saturate(180%) blur(15px);
-	transition: all;
-	transition-duration: 2s;
-}
-
-.global-nav-links, .local-nav-links {
-	display: flex;
-	align-items: center;
-	max-width: 1000px;
-	height: 50px;
-	margin: 0 auto;
-}
-
-.global-nav-links .logo {
-	/* 첫번째만 왼쪽으로 붙도록 */
-	margin-right: auto;
-	font-size: 1.5rem;
-	font-weight: bold;
-}
-.local-nav-links {
-	justify-content: space-between;
-}
-
-.local-nav-links a {
-	font-size: 0.9rem;
-}
-.global-nav-links a:not(.logo){
-	margin-left: 3em;
 }

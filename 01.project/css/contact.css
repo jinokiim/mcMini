@@ -1,0 +1,40 @@
+.contact-container {
+  width: 80%;
+  max-width: 1000px;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+}
+
+
+.contact-main-image {
+  width: 100%;
+}
+.contact-main-image img{
+  width: 100%;
+  
+}
+.contact-main-image .contact-header-title {
+  position: absolute;
+  top: 0;
+}
+
+.info-section {
+  background-color: orange;
+  width: 50%;
+  text-align: left;
+}
+.info-section .info-title {
+  margin: 50px 0 50px 0;
+}
+.info-section .info-desc {
+  margin: 50px 0 50px 0;
+}
+.info-section .info-icon i {
+  margin: 30px 20px 50px 20px;
+}
+
+.input-section {
+  background-color: green;
+  width: 50%;
+}
