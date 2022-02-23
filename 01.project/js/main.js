@@ -20,6 +20,23 @@
         }
   };
 
+  var maintitleAnimation = () => {
+    var scrollHeight = $(window).scrollTop();
+    // 스크롤 높이 출력
+    console.log(scrollHeight)
+    if (yOffset<1500) {
+      document.body.classList.add('main-title-stiky')
+    } else {
+      document.body.classList.remove('main-title-stiky')
+    }
+  }
+
+
+
+
+
+
+
   // 이미지가 스크롤에 따라 고정되고 작아지면서 사라지는 애니매이션
   var imageAnimation = () => {
     var scrollHeight = $(window).scrollTop();
@@ -59,6 +76,7 @@
     // nav 바 색변경 관련
     checkMenu();
     imageAnimation();
+    maintitleAnimation();
   });
 
 

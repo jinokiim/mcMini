@@ -27,11 +27,6 @@ html {
 	font-size: 14px;
 }
 
-
-
-
-
-
 /* @@@@@@@@@@ 페이지 시작 @@@@@@@@@@ */
 
 
@@ -40,12 +35,42 @@ html {
 
 .scroll-section {
     /* 섹션마다 화면나오게 설정 */
-    padding-top: 50vh;
+    /* padding-top: 50vh; */
+}
+.main-view {
+    position: relative;
+    height: 2700px;
+    /* background-color: orange; */
+}
+.main-title h1{
+    text-align: center;
+    z-index: 8888;
+    position: absolute;
+    font-size: 50px;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-text-stroke: 3px white;
+}
+.sub-title h1{
+    text-align: center;
+    z-index: 8888;
+    position: absolute;
+    font-size: 50px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-text-stroke: 3px white;
 }
 
-#scroll-section-0 h1{
-    font-size: 50px;
-    text-align: center;
+.container .main-view img {
+    width: 100%;
+    margin: auto;
+}
+.main-image-box {
+    position: sticky;
+    margin-bottom: 200px;
+    top: 50px;
 }
 
 .main-message{

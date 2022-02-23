@@ -48,15 +48,13 @@
             
           </select>
           <button class="btn btn-outline-secondary" type="button" id="inquery">조회</button>
+          
         </div>
         <!-- 분류 결과 구역 -->
         <div class="result-section">
           <div class="result-item" id="list">
-            <!-- <a><img src="./img/sample/starbucks-logo.png"></a>
-            <a><img src="./img/sample/starbucks-logo.png"></a>
-            <a><img src="./img/sample/starbucks-logo.png"></a>
-            <a><img src="./img/sample/starbucks-logo.png"></a>
-            <a><img src="./img/sample/starbucks-logo.png"></a> -->
+            <!-- <button type="button" class="storebtn"><img src="${logo}"></button> -->
+            
           </div>
 
         </div>
@@ -64,34 +62,35 @@
         <!-- 가게 결과 상세보기 창 -->
         <div class="store-info-section">
           <div class="store-info-header">
-            <div class="store-picture">
-              <img src="./img/sample/starbucks-menu.jpg">
+            <div class="store-picture" id="menupic">
+              <!-- <img  id="menu" src=""> -->
+              <!-- <img src="./img/sample/starbucks-menu.jpg"> -->
             </div>
           </div>
 
 
           <div class="store-info-main">
             <div class="store-info-name">
-              <h3>스타벅스</h3>
+              <h3 id="storename"></h3>
             </div>
             <div class="store-info-summary">
-              <div class="summary-logo">
-                <img src="./img/sample/starbucks-logo.png">
+              <div class="summary-logo" id="storelogo">
+                <!-- <img  id="storelogo" src=""> -->
               </div>
               <dl class="summary-info">
                 <dt>업종구분</dt>
-                <dd>카페</dd>
+                <dd id="storetype"></dd>
                 <dt>매장위치</dt>
-                <dd>1F</dd>
+                <dd id="floor"></dd>
               </dl>
             </div>
           </div>
           <div class="store-detail">
             <div class="store-desc">
-              <h5>한 그릇에 모든 정성을 담아내는 카페</h5>
+              <h5 id="desc"></h5>
             </div>
             <div class="store-menuinfo">
-              <p>대표메뉴 <strong>민트초코라떼</strong></p>
+              <p>대표메뉴 <strong id="menu"></strong></p>
             </div>
           </div>
           
