@@ -23,7 +23,7 @@
   var maintitleAnimation = () => {
     var scrollHeight = $(window).scrollTop();
     // 스크롤 높이 출력
-    console.log(scrollHeight)
+    // console.log(scrollHeight)
     if (yOffset<1500) {
       document.body.classList.add('main-title-stiky')
     } else {
