@@ -4,7 +4,7 @@ $(document).ready(function () {
   $('#signup-form button[name="signup-button"]').click(function(evt) {
 
     var lastname = $('#signup-form input[name="lastname-input"]')
-    console.log(lastname.val());
+    // console.log(lastname.val());
     if(lastname.val()) {
       $('span[title="lastname-value"]').show().html('GOOD!').css('color', 'green')
       lastname.removeClass('is-invalid')

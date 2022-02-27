@@ -15,11 +15,12 @@
 .local-nav-sticky .local-nav {
 	position: sticky;
 	top: 0;
-	background: rgba(62, 68, 200, 0.4);
+	background: rgba(13, 158, 70, 0.8);
 	backdrop-filter: saturate(180%) blur(15px);
 	transition: all;
 	transition-duration: 2s;
 }
+
 
 .global-nav-links, .local-nav-links {
 	display: flex;
@@ -40,12 +41,11 @@
 }
 
 .local-nav-links a {
-	font-size: 1.1rem;
-	-webkit-text-stroke: 1px black;
-	color: white;
+	font-size: 1.5rem;
+	-webkit-text-stroke: 1px white;
+	color: black;
 	font-weight: 800;
 }
 .global-nav-links a:not(.logo){
 	margin-left: 3em;
-
 }
